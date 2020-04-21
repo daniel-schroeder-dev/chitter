@@ -26,4 +26,8 @@
     top: 0;
     right: 0;
   }
+
+  .page-title-bar__user-avatar {
+    display: none;
+  }
 }

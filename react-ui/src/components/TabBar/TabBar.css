@@ -14,6 +14,15 @@
   color: #888;
 }
 
+.tab-bar__logo,
+.tab-bar__logo-link {
+  display: none;
+}
+
+.hide-sm-screen {
+  display: none;
+}
+
 
 @media (hover: hover) {
   .tab-bar__icon:hover { color: var(--red); }
@@ -32,5 +41,24 @@
     height: 100vh;
     padding: 18px 8px;
     border-right: solid 1px #ccc;
+  }
+
+  .tab-bar__logo-link {
+    display: inline-block;
+  }
+
+  .hide-sm-screen {
+    display: inline-block;
+  }
+
+  .tab-bar__logo {
+    display: block;
+    width: 30px;
+  }
+
+  .tab-bar__user-avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
   }
 }

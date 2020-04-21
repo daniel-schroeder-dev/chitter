@@ -3,14 +3,15 @@ import { useRouteMatch } from 'react-router-dom';
 
 import profilePic from '../../fixtures/profile-pic.jpg';
 
-
 import './PageTitleBar.css';
 
 function PageTitleBar(props) {
 
   const match = useRouteMatch();
 
-  const pageTitle = match.params[0][0].toUpperCase() + match.params[0].slice(1);
+  console.log(match)
+
+  const pageTitle = match.url.split('/').pop()[0].toUpperCase() + match.url.split('/').pop().slice(1);
 
   return (
     <header className="page-title-bar">
