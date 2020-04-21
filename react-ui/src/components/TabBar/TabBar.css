@@ -1,0 +1,18 @@
+.tab-bar {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  bottom: 0;
+  width: 100%;
+  padding: 18px 24px;
+  border-top: 1px solid #ccc;
+}
+
+.tab-bar__icon {
+  font-size: 24px;
+  color: #888;
+}
+
+.tab-bar__icon:hover {
+  color: var(--red);
+}

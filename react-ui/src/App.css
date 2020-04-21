@@ -11,6 +11,7 @@ html {
 :root {
   --heading-font-family: 'Source Sans Pro', sans-serif;
   --body-font-family: 'Lato', sans-serif;
+  --red: #e60000;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -21,4 +22,5 @@ h1, h2, h3, h4, h5, h6 {
 body {
   font-family: var(--body-font-family);
   font-weight: 400;
+  font-size: 16px;
 }
