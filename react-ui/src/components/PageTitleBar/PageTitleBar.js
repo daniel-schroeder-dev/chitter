@@ -9,10 +9,12 @@ function PageTitleBar(props) {
 
   const match = useRouteMatch();
 
+  const pageTitle = match.params[0][0].toUpperCase() + match.params[0].slice(1);
+
   return (
     <header className="page-title-bar">
       <img className="page-title-bar__user-avatar" src={profilePic} alt="user" />
-      <h1 className="page-title-bar__page-title" >{match.params[0]}</h1>
+      <h1 className="page-title-bar__page-title" >{pageTitle}</h1>
       <div>+</div>
     </header>
   );

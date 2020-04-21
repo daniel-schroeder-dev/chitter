@@ -1,4 +1,5 @@
 .page-title-bar {
+  position: fixed;
   border-bottom: 1px solid #ccc;
   padding: 4px 12px;
   display: flex;
@@ -16,4 +17,11 @@
 .page-title-bar__page-title {
   font-size: 20px;
   flex-grow: 1;
+}
+
+@media all and (min-width: 500px) {
+  .page-title-bar {
+    width: 85%;
+    right: 0;
+  }
 }

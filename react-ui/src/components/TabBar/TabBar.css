@@ -4,7 +4,7 @@
   justify-content: space-between;
   bottom: 0;
   width: 100%;
-  padding: 18px 24px;
+  padding: 18px 12%;
   border-top: 1px solid #ccc;
 }
 
@@ -13,6 +13,24 @@
   color: #888;
 }
 
-.tab-bar__icon:hover {
+
+@media (hover: hover) {
+  .tab-bar__icon:hover { color: var(--red); }
+}
+
+.tab-bar__icon:active,
+.active .tab-bar__icon {
   color: var(--red);
+}
+
+@media all and (min-width: 500px) {
+  .tab-bar {
+    top: 0;
+    left: 0;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px 5%;
+    width: inherit;
+    border-right: solid 1px #ccc;
+  }
 }
