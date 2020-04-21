@@ -1,5 +1,6 @@
 .page-title-bar {
-  border-bottom: 1px solid #ababab;
+  border-bottom: 1px solid #ccc;
+  padding: 12px;
 }
 
 .page-title-bar__user-avatar {
