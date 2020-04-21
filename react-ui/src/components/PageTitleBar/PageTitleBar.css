@@ -23,6 +23,7 @@
   .page-title-bar {
     position: fixed;
     width: 87.5%;
+    /*width: 437.5px;*/
     top: 0;
     right: 0;
   }
@@ -30,4 +31,49 @@
   .page-title-bar__user-avatar {
     display: none;
   }
+}
+
+@media all and (min-width: 650px) {
+
+  .page-title-bar {
+    width: 62.5%;
+    border-right: 1px solid #ccc;
+  }
+
+}
+
+@media all and (min-width: 900px) {
+
+  .page-title-bar {
+    width: 45%;
+    right: 10%;
+  }
+
+}
+
+@media all and (min-width: 1050px) {
+
+  .page-title-bar {
+    width: 40%;
+    right: 15%;
+  }
+
+}
+
+@media all and (min-width: 1200px) {
+
+  .page-title-bar {
+    width: 35%;
+    right: 20%;
+  }
+
+}
+
+@media all and (min-width: 1500px) {
+
+  .page-title-bar {
+    width: 30%;
+    right: 25%;
+  }
+
 }

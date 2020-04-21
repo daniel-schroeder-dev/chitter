@@ -45,3 +45,19 @@ body {
       "tab-bar page-title-bar";
   }
 }
+
+@media (min-width: 650px) {
+  .app {
+    grid-template-columns: 3fr 5fr;
+    grid-template-areas: 
+      "tab-bar page-title-bar";
+  }
+}
+
+@media (min-width: 900px) {
+  .app {
+    grid-template-columns: 4fr 4fr;
+    grid-template-areas: 
+      "tab-bar page-title-bar";
+  }
+}
