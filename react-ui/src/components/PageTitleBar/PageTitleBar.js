@@ -12,7 +12,8 @@ function PageTitleBar(props) {
   return (
     <header className="page-title-bar">
       <img className="page-title-bar__user-avatar" src={profilePic} alt="user" />
-      {match.params[0]}
+      <h1 className="page-title-bar__page-title" >{match.params[0]}</h1>
+      <div>+</div>
     </header>
   );
 }

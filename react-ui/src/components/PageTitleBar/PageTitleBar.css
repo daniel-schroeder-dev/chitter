@@ -1,9 +1,19 @@
 .page-title-bar {
   border-bottom: 1px solid #ccc;
-  padding: 12px;
+  padding: 4px 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .page-title-bar__user-avatar {
-  width: 30px;
+  width: 32px;
+  height: 32px;
   border-radius: 50%;
+  margin-right: 18px;
+}
+
+.page-title-bar__page-title {
+  font-size: 20px;
+  flex-grow: 1;
 }
