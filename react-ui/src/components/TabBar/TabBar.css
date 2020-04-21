@@ -19,6 +19,10 @@
   display: none;
 }
 
+.tab-bar__nav-link-text {
+  margin: 0;
+}
+
 .hide-sm-screen {
   display: none;
 }
@@ -41,9 +45,10 @@
   .tab-bar {
     position: relative;
     flex-direction: column;
+    justify-content: space-around;
     align-items: center;
     height: 75vh;
-    padding: 18px 18px 18px 24px;
+    padding: 0px 14px 18px 18px;
     border-right: solid 1px #ccc;
     border-bottom: solid 1px #ccc;
     border-left: solid 1px #ccc;
@@ -63,10 +68,11 @@
   }
 
   .tab-bar__user-avatar {
-    width: 32px;
-    height: 32px;
+    width: 20px;
+    height: 20px;
     border-radius: 50%;
   }
+
 }
 
 
@@ -85,10 +91,7 @@
     flex-grow: 1;
   }
 
-  .tab-bar__user-avatar {
-    width: 20px;
-    height: 20px;
-  }
+
 
   .hide-m-screen {
     display: inline-block;
@@ -106,7 +109,7 @@
   }
 
   .tab-bar__logo-link {
-    margin-bottom: 8px;
+    margin-bottom: 0px;
   }
 
 }

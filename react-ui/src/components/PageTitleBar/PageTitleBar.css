@@ -26,6 +26,8 @@
     /*width: 437.5px;*/
     top: 0;
     right: 0;
+    border-right: 1px solid #ccc;
+
   }
 
   .page-title-bar__user-avatar {
@@ -37,7 +39,6 @@
 
   .page-title-bar {
     width: 62.5%;
-    border-right: 1px solid #ccc;
   }
 
 }
