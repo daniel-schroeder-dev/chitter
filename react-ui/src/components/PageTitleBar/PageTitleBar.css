@@ -1,5 +1,5 @@
 .page-title-bar {
-  position: fixed;
+  grid-area: page-title-bar;
   border-bottom: 1px solid #ccc;
   padding: 4px 12px;
   display: flex;
@@ -21,7 +21,9 @@
 
 @media all and (min-width: 500px) {
   .page-title-bar {
-    width: 85%;
+    position: fixed;
+    width: 87.5%;
+    top: 0;
     right: 0;
   }
 }

@@ -28,3 +28,20 @@ body {
 @media (hover: hover) {
   a:hover, button:hover, svg:hover { color: inherit; }
 }
+
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Realizing_common_layouts_using_CSS_Grid_Layout */
+.app {
+  display: grid;
+  /*grid-gap: 20px;*/
+  grid-template-areas: 
+    "page-title-bar"
+    "tab-bar";
+}
+
+@media (min-width: 500px) {
+  .app {
+    grid-template-columns: 1fr 7fr;
+    grid-template-areas: 
+      "tab-bar page-title-bar";
+  }
+}

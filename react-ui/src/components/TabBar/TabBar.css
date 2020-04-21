@@ -1,4 +1,5 @@
 .tab-bar {
+  grid-area: tab-bar;
   position: fixed;
   display: flex;
   justify-content: space-between;
@@ -25,12 +26,11 @@
 
 @media all and (min-width: 500px) {
   .tab-bar {
-    top: 0;
-    left: 0;
+    position: relative;
     flex-direction: column;
     align-items: center;
-    padding: 24px 5%;
-    width: inherit;
+    height: 100vh;
+    padding: 18px 8px;
     border-right: solid 1px #ccc;
   }
 }

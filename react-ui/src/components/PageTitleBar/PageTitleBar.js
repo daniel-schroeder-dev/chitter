@@ -3,6 +3,7 @@ import { useRouteMatch } from 'react-router-dom';
 
 import profilePic from '../../fixtures/profile-pic.jpg';
 
+
 import './PageTitleBar.css';
 
 function PageTitleBar(props) {
