@@ -1,0 +1,8 @@
+.page-title-bar {
+  border-bottom: 1px solid #ababab;
+}
+
+.page-title-bar__user-avatar {
+  width: 30px;
+  border-radius: 50%;
+}
