@@ -31,6 +31,10 @@
   display: none;
 }
 
+.active .tab-bar__nav-link-text {
+  color: var(--red);
+}
+
 
 @media (hover: hover) {
   .tab-bar__icon:hover { color: var(--red); }
@@ -47,11 +51,9 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    height: 75vh;
+    height: 65vh;
     padding: 0px 14px 18px 18px;
     border-right: solid 1px #ccc;
-    border-bottom: solid 1px #ccc;
-    border-left: solid 1px #ccc;
   }
 
   .tab-bar__logo-link {
@@ -68,8 +70,8 @@
   }
 
   .tab-bar__user-avatar {
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
     border-radius: 50%;
   }
 
@@ -106,6 +108,9 @@
 
   .tab-bar__icon__wrapper {
     width: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .tab-bar__logo-link {
@@ -119,7 +124,6 @@
   .tab-bar {
     width: 60%;
     left: 30%;
-    border-left: 1px solid #ccc;
     padding-left: 24px;
   }
 

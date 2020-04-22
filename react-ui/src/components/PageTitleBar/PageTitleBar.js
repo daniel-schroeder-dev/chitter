@@ -9,8 +9,6 @@ function PageTitleBar(props) {
 
   const match = useRouteMatch();
 
-  console.log(match)
-
   const pageTitle = match.url.split('/').pop()[0].toUpperCase() + match.url.split('/').pop().slice(1);
 
   return (
