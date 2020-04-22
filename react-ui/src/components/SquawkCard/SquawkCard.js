@@ -9,7 +9,9 @@ import './SquawkCard.css';
 function SquawkCard(props) {
   return (
     <article className="squawk-card">
-      <img className="squawk-card__avatar" src={props.avatar} alt="avatar" />
+      <div className="squawk-card__avatar-wrapper">
+        <img className="squawk-card__avatar" src={props.avatar} alt="avatar" />
+      </div>
       <div className="squawk-card__main-content-area">
         <h3 className="squawk-card__user-name">{props.userName}<span className="squawk-card__handle">@{props.handle}</span><span className="squawk-card__elapsed-time">&#183; {props.elapsedTime}m</span></h3>
         <p>{props.content}</p>
