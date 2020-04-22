@@ -7,6 +7,8 @@
   width: 100%;
   padding: 18px 12%;
   border-top: 1px solid #ccc;
+  z-index: 1;
+  background-color: #fff;
 }
 
 .tab-bar__icon {
@@ -47,13 +49,16 @@
 
 @media all and (min-width: 500px) {
   .tab-bar {
-    position: relative;
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 12.5%;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     height: 65vh;
     padding: 0px 14px 18px 18px;
-    border-right: solid 1px #ccc;
+    /*border-right: solid 1px #ccc;*/
   }
 
   .tab-bar__logo-link {
@@ -82,8 +87,8 @@
 
   .tab-bar {
     align-items: flex-start;
-    width: 75%;
-    left: 25%;
+    width: 30.5%;
+    left: 7%;
   }
 
   .tab-bar__nav-link-text {
@@ -122,9 +127,10 @@
 @media all and (min-width: 900px) {
 
   .tab-bar {
-    width: 60%;
-    left: 30%;
-    padding-left: 24px;
+    align-items: flex-start;
+    width: 23.5%;
+    left: 21.5%;
+    z-index: 2;
   }
 
 }
@@ -132,8 +138,8 @@
 @media all and (min-width: 1050px) {
 
   .tab-bar {
-    width: 50%;
-    left: 40%;
+    width: 21.5%;
+    left: 23.5%;
   }
 
 }
@@ -141,8 +147,8 @@
 @media all and (min-width: 1200px) {
 
   .tab-bar {
-    width: 40%;
-    left: 50%;
+    width: 19.5%;
+    left: 25.5%;
   }
 
 }
@@ -150,8 +156,8 @@
 @media all and (min-width: 1500px) {
 
   .tab-bar {
-    width: 30%;
-    left: 60%;
+    width: 15.5%;
+    left: 29.5%;
   }
 
 }

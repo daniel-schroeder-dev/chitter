@@ -1,10 +1,16 @@
 .page-title-bar {
   grid-area: page-title-bar;
+  position: fixed;
+  background-color: #fff;
+  width: 100%;
   border-bottom: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
   padding: 4px 12px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 1;
 }
 
 .page-title-bar__user-avatar {
