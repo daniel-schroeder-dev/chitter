@@ -1,8 +1,27 @@
 .feed {
   grid-area: feed;
-  height: calc(100vh - 70px);
-  margin-top: 70px;
+  height: calc(100vh - 58.78px);
   border: 1px solid green;
+}
+
+@media all and (min-width: 500px) {
+
+  .feed {
+    position: absolute;
+    width: 87.5%;
+    right: 0;
+    top: 58.78px;
+  }
+
+}
+
+
+@media all and (min-width: 650px) {
+
+  .feed {
+    width: 62.5%;
+  }
+
 }
 
 @media all and (min-width: 900px) {
