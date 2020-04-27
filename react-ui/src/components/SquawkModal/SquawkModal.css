@@ -1,0 +1,66 @@
+.squawk-modal {
+  height: 100vh;
+  width: 100%;
+  background-color: white;
+  z-index: 4;
+}
+
+.squawk-modal__top-bar {
+  padding: 12px;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.squawk-modal__icon {
+  color: var(--red);
+  font-size: 18px;
+}
+
+.squawk-modal__squawk-button {
+  outline: none;
+  display: inline-flex;
+  align-items: center;
+  background-color: var(--red);
+  border-color: var(--red);
+  border-radius: 40px;
+  padding: 8px 12px;
+  color: #fff;
+  font-family: var(--heading-font-family);
+  font-size: 16px;
+  font-weight: 700;
+  border-style: initial;
+}
+
+.squawk-modal__main-content-area {
+  display: flex;
+  align-items: center;
+}
+
+.squawk-modal__avatar {
+  align-self: flex-start;
+  width: 50px;
+  border-radius: 50%;
+  margin: 12px;
+}
+
+.squawk-modal__text-box {
+  padding: 12px 6px;
+  outline: none;
+  font-size: 20px;
+  resize: none;
+  border: none;
+}
+
+.squawk-modal__text-box::placeholder {
+  color: #ababab;
+}
+
+
+
+
+
+
+
+
