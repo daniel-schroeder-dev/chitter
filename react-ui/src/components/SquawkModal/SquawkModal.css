@@ -48,6 +48,7 @@
 
 .squawk-modal__text-box {
   padding: 12px 6px;
+  width: 80%;
   outline: none;
   font-size: 20px;
   resize: none;
@@ -60,7 +61,8 @@
 
 @media (min-width: 700px) {
   .squawk-modal {
-    height: 400px;
+    height: 300px;
+    border-radius: 12px;
     width: 600px;
     top: 10%;
     left: calc(50% - 300px);

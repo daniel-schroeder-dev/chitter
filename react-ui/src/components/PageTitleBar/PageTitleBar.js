@@ -9,7 +9,9 @@ function PageTitleBar(props) {
 
   const match = useRouteMatch();
 
-  const pageTitle = match.url.split('/').pop()[0].toUpperCase() + match.url.split('/').pop().slice(1);
+  let pageTitle = match.url.split('/').pop()[0].toUpperCase() + match.url.split('/').pop().slice(1);
+
+  if (pageTitle === 'Squawk') pageTitle = props.pageTitle;
 
   return (
     <header className="page-title-bar">

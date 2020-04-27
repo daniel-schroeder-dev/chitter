@@ -10,27 +10,37 @@ import Overlay from './components/Overlay/Overlay';
 
 import './App.css';
 
-function App() {
-  return (
-    <div className="app">
-      <Switch>
-        <Route exact path="/">
-          <Redirect to="/home" />
-        </Route>
-        <Route path="/*">
-          <PageTitleBar />
-          <TabBar />
-          <Feed />
-          <SquawkButton />
-        </Route>
-      </Switch>
-      <Route path="/compose/squawk">
-        <SquawkModal />
-        <Overlay />
-      </Route>
+class App extends React.Component {
 
-    </div>
-  );
+  state = {
+    pageTitle: null,
+  };
+
+  handleClick = pageTitle => {
+    this.setState({ pageTitle })
+  };
+
+  render() {
+    return (
+      <div className="app">
+        <Switch>
+          <Route exact path="/">
+            <Redirect to="/home" />
+          </Route>
+          <Route path="/*">
+            <PageTitleBar pageTitle={this.state.pageTitle} />
+            <TabBar />
+            <Feed />
+            <SquawkButton handleClick={this.handleClick} />
+          </Route>
+        </Switch>
+        <Route path="/compose/squawk">
+          <SquawkModal />
+          <Overlay />
+        </Route>
+      </div>
+    );
+  }
 }
 
 export default App;
