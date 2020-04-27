@@ -16,3 +16,9 @@
   top: 11px;
   left: 11px;
 }
+
+@media (min-width: 500px) {
+  .squawk-button {
+    display: none;
+  }
+}

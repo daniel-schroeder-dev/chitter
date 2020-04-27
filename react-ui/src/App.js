@@ -29,7 +29,7 @@ class App extends React.Component {
           </Route>
           <Route path="/*">
             <PageTitleBar pageTitle={this.state.pageTitle} />
-            <TabBar />
+            <TabBar handleClick={this.handleClick} />
             <Feed />
             <SquawkButton handleClick={this.handleClick} />
           </Route>

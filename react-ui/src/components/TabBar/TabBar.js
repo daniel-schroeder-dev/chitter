@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useRouteMatch } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHome, faSearch, faBell, faEnvelope, faBookmark, faClipboard, faStroopwafel, faFeatherAlt } from '@fortawesome/free-solid-svg-icons'
 
@@ -12,6 +12,10 @@ function TabBar(props) {
 
   const username = 'DSchroederDev';
 
+  const match = useRouteMatch();
+
+  const pageTitle = match.url.split('/').pop()[0].toUpperCase() + match.url.split('/').pop().slice(1);
+
   return (
     <footer className="tab-bar">
       <NavLink className="tab-bar__logo-link" to="/home"><img className="tab-bar__logo" src={logo} alt="logo" /></NavLink>
@@ -23,7 +27,7 @@ function TabBar(props) {
       <NavLink className="tab-bar__nav-link hide-sm-screen" to={`/${username}/lists`}><span className="tab-bar__icon__wrapper"><FontAwesomeIcon className="tab-bar__icon hide-sm-screen" icon={faClipboard} /></span><h3 className="tab-bar__nav-link-text hide-m-screen">Lists</h3></NavLink>
       <NavLink className="tab-bar__nav-link hide-sm-screen" to={`/${username}`} exact><span className="tab-bar__icon__wrapper"><img className="tab-bar__user-avatar" src={profilePic} alt="user" /></span><h3 className="tab-bar__nav-link-text hide-m-screen">Profile</h3></NavLink>
       <NavLink className="tab-bar__nav-link hide-sm-screen" to={`/${username}/settings`} exact><span className="tab-bar__icon__wrapper"><FontAwesomeIcon className="tab-bar__icon hide-sm-screen" icon={faStroopwafel} /></span><h3 className="tab-bar__nav-link-text hide-m-screen">More</h3></NavLink>
-      <NavLink className="tab-bar__nav-link hide-sm-screen" to={`/${username}/squawk`} exact><span className="tab-bar__icon__wrapper"><FontAwesomeIcon className="tab-bar__icon hide-sm-screen" icon={faFeatherAlt} /></span><h3 className="tab-bar__nav-link-text hide-m-screen">Squawk</h3></NavLink>
+      <NavLink className="tab-bar__nav-link hide-sm-screen" to={'/compose/squawk'} exact onClick={() => props.handleClick(pageTitle)} ><span className="tab-bar__icon__wrapper"><FontAwesomeIcon className="tab-bar__icon hide-sm-screen" icon={faFeatherAlt} /></span><h3 className="tab-bar__nav-link-text hide-m-screen">Squawk</h3></NavLink>
 
     </footer>
   );
