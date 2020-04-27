@@ -1,12 +1,11 @@
 .squawk-button {
-  grid-area: squawk-button;
-  position: absolute;
-  bottom: 100px;
-  right: 40px;
+  position: fixed;
+  bottom: 90px;
+  right: 30px;
   z-index: 3;
   color: white;
   background-color: var(--red);
-  padding: 24px;
+  padding: 20px;
   border-radius: 50%;
   font-size: 24px;
   text-decoration: none;
@@ -14,6 +13,6 @@
 
 .squawk-button__plus {
   position: absolute;
-  top: 14px;
-  left: 14px;
+  top: 11px;
+  left: 11px;
 }

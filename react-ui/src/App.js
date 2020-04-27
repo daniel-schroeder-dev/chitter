@@ -4,6 +4,7 @@ import { Switch, Route, Redirect } from 'react-router-dom';
 import PageTitleBar from './components/PageTitleBar/PageTitleBar';
 import TabBar from './components/TabBar/TabBar';
 import Feed from './components/Feed/Feed';
+import SquawkButton from './components/SquawkButton/SquawkButton';
 
 import './App.css';
 
@@ -18,6 +19,7 @@ function App() {
           <PageTitleBar />
           <TabBar />
           <Feed />
+          <SquawkButton />
         </Route>
       </Switch>
 

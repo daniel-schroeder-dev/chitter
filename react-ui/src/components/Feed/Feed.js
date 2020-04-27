@@ -20,7 +20,7 @@ class Feed extends React.Component {
 
 
     let data = [];
-    data.length = 20;
+    data.length = 10;
     data.fill(1, 0);
     data = data.map((_, i) => {
       return {
