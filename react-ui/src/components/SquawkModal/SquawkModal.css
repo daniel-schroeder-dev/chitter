@@ -1,5 +1,6 @@
 .squawk-modal {
   height: 100vh;
+  position: fixed;
   width: 100%;
   background-color: white;
   z-index: 4;
@@ -55,6 +56,15 @@
 
 .squawk-modal__text-box::placeholder {
   color: #ababab;
+}
+
+@media (min-width: 700px) {
+  .squawk-modal {
+    height: 400px;
+    width: 600px;
+    top: 10%;
+    left: calc(50% - 300px);
+  }
 }
 
 

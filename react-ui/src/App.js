@@ -6,6 +6,7 @@ import TabBar from './components/TabBar/TabBar';
 import Feed from './components/Feed/Feed';
 import SquawkButton from './components/SquawkButton/SquawkButton';
 import SquawkModal from './components/SquawkModal/SquawkModal';
+import Overlay from './components/Overlay/Overlay';
 
 import './App.css';
 
@@ -25,6 +26,7 @@ function App() {
       </Switch>
       <Route path="/compose/squawk">
         <SquawkModal />
+        <Overlay />
       </Route>
 
     </div>
